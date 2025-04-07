@@ -1,45 +1,44 @@
-function cadastrarMedico(event) {
+function cadastrarPaciente(event) {
     event.preventDefault();
 
     // Captura dos valores do formulário
-    const medico = {
+    const paciente = {
         nome: document.getElementById('nome').value,
-        crm: document.getElementById('crm').value,
-        especialidade: document.getElementById('especialidade').value,
+        cpf: document.getElementById('cpf').value,
         telefone: document.getElementById('telefone').value,
         email: document.getElementById('email').value,
         ativo: document.getElementById('ativo').value === 'true'
     };
 
     // Validação simples
-    if (!medico.nome || !medico.crm || !medico.especialidade || !medico.telefone || !medico.email) {
+    if (!paciente.nome || !paciente.cpf || !paciente.telefone || !paciente.email) {
         document.getElementById('errorMessage').style.display = 'block';
         return;
     }
 
-    // Limpa mensagem de erro se tudo estiver preenchido
+    // Limpa mensagem de erro
     document.getElementById('errorMessage').style.display = 'none';
 
-    // Envio dos dados para o backend
-    fetch('http://localhost:8080/medicos', {
+    // Envio para o backend
+    fetch('http://localhost:8080/pacientes', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(medico)
+        body: JSON.stringify(paciente)
     })
     .then(response => {
         if (!response.ok) {
-            throw new Error('Erro ao cadastrar médico');
+            throw new Error('Erro na resposta do servidor');
         }
         return response.json();
     })
     .then(data => {
-        alert('Médico cadastrado com sucesso!');
-        document.getElementById('medicoForm').reset();
+        alert('Paciente cadastrado com sucesso!');
+        document.getElementById('pacienteForm').reset();
     })
     .catch(error => {
-        console.error('Erro ao cadastrar médico:', error);
-        alert('Erro ao cadastrar médico.');
+        console.error('Erro ao cadastrar paciente:', error);
+        alert('Erro ao cadastrar paciente.');
     });
 }
