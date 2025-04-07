@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/StyleConsulta.CSS">
+    <script src="JS/scriptConsulta.js"></script>
+    <title>Cadastro de Consulta</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro de Consulta</h2>
+        <form id="consultaForm" onsubmit="cadastrarConsulta(event)">
+            <label for="medicoId">ID do Médico:</label>
+            <input type="number" id="medicoId" name="medicoId" required>
+
+            <label for="pacienteId">ID do Paciente:</label>
+            <input type="number" id="pacienteId" name="pacienteId" required>
+
+            <label for="dataHora">Data e Hora:</label>
+            <input type="datetime-local" id="dataHora" name="dataHora" required>
+
+            <span id="errorMessage" class="error">Por favor, preencha todos os campos corretamente.</span>
+
+            <button type="submit">Cadastrar Consulta</button>
+            <button type="button" class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+        </form>
+    </div>
+</body>
+</html>
