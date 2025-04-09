@@ -25,7 +25,6 @@ public class Medico {
     private String crm;
     private String especialidade;
     private String telefone;
-    private String email;
     private boolean ativo;
 }
 

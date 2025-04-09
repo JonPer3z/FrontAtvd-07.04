@@ -1,62 +1,62 @@
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-color: #f5f7fa;
+    font-family: 'Poppins', Arial, sans-serif; /* Fonte moderna e leve */
+    background-color: #f5f7fa; /* Cinza claro e acolhedor */
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh; /* Para o footer ficar na base */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column; /* Organiza header, form-container e footer */
+    justify-content: space-between; /* Espaça os elementos */
 }
 
 .form-container {
     background-color: #ffffff;
-    padding: 30px 40px;
-    border-left: 6px solid #4db6ac;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    width: 400px;
-    margin: auto;
+    padding: 30px 40px; /* Padding ajustado */
+    border-left: 6px solid #4db6ac; /* Linha vertical verde-azulada à esquerda */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra mínima */
+    width: 400px; /* Largura fixa */
+    margin: auto; /* Centraliza no espaço disponível */
 }
 
 h2 {
     text-align: center;
-    color: #374151;
-    font-size: 28px;
-    font-weight: 600;
+    color: #374151; /* Cinza escuro suave */
+    font-size: 28px; /* Tamanho ajustado */
+    font-weight: 600; /* Negrito moderado */
     margin-bottom: 25px;
-    padding-left: 10px;
+    padding-left: 10px; /* Alinhamento com a borda colorida */
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
-    color: #4b5563;
-    font-weight: 500;
+    color: #4b5563; /* Cinza médio */
+    font-weight: 500; /* Peso leve para legibilidade */
 }
 
 input, select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #e2e8f0;
-    border-radius: 6px;
+    padding: 10px; /* Padding confortável */
+    margin-bottom: 12px; /* Espaço entre campos */
+    border: 1px solid #e2e8f0; /* Borda cinza clara */
+    border-radius: 6px; /* Bordas suaves */
     box-sizing: border-box;
-    font-family: 'Poppins', Arial, sans-serif;
-    transition: border-color 0.3s ease;
+    font-family: 'Poppins', Arial, sans-serif; /* Consistência na fonte */
+    transition: border-color 0.3s ease; /* Transição suave */
 }
 
 input:focus, select:focus {
-    border-color: #4db6ac;
-    outline: none;
+    border-color: #4db6ac; /* Destaque ao focar */
+    outline: none; /* Remove contorno padrão */
 }
 
 button {
     width: 100%;
     padding: 12px;
-    background-color: #4db6ac;
+    background-color: #4db6ac; /* Verde-azulado */
     color: #ffffff;
     border: none;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0; /* Bordas arredondadas só à direita */
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
@@ -65,31 +65,32 @@ button {
 }
 
 button:hover {
-    background-color: #3d938b;
-    padding-left: 16px;
+    background-color: #3d938b; /* Tom mais escuro */
+    padding-left: 16px; /* Deslocamento sutil à direita */
 }
 
 .back-button {
-    background-color: #6b7280;
+    background-color: #6b7280; /* Cinza médio */
 }
 
 .back-button:hover {
-    background-color: #4b5563;
-    padding-left: 16px;
+    background-color: #4b5563; /* Tom mais escuro */
+    padding-left: 16px; /* Mesmo deslocamento do botão principal */
 }
 
 .error {
-    color: #ef4444;
+    color: #ef4444; /* Vermelho suave */
     font-size: 0.9em;
     display: none;
-    padding-left: 10px;
+    padding-left: 10px; /* Alinhamento com o resto */
 }
 
+/* Estilização do Header */
 header {
     width: 100%;
     background-color: #ffffff;
     padding: 15px 0;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0; /* Linha sutil */
 }
 
 .header-content {
@@ -102,20 +103,20 @@ header {
 }
 
 .logo {
-    color: #4db6ac;
+    color: #4db6ac; /* Verde-azulado */
     font-size: 24px;
     font-weight: 600;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 10px; /* Alinhamento sutil */
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Espaço entre links */
 }
 
 .nav-link {
-    color: #4b5563;
+    color: #4b5563; /* Cinza médio */
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -123,25 +124,26 @@ nav {
 }
 
 .nav-link:hover {
-    color: #4db6ac;
+    color: #4db6ac; /* Destaque no hover */
 }
 
+/* Estilização do Footer */
 footer {
     width: 100%;
     background-color: #ffffff;
     padding: 10px 0;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid #e2e8f0; /* Linha sutil */
     text-align: center;
 }
 
 .footer-content {
     max-width: 900px;
     margin: 0 auto;
-    color: #6b7280;
+    color: #6b7280; /* Cinza médio */
     font-size: 12px;
 }
 
 .footer-content p {
     margin: 5px 0;
-    padding-left: 10px;
+    padding-left: 10px; /* Alinhamento sutil */
 }
