@@ -33,7 +33,7 @@ function cadastrarPaciente(event) {
         }
         return response.json();
     })
-    .then(data => {
+    .then(() => {
         alert('Paciente cadastrado com sucesso!');
         document.getElementById('pacienteForm').reset();
     })
