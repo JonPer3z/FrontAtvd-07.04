@@ -7,11 +7,12 @@ function cadastrarMedico(event) {
         crm: document.getElementById('crm').value,
         especialidade: document.getElementById('especialidade').value,
         telefone: document.getElementById('telefone').value,
+        email: document.getElementById('email').value, // Adicionado o email
         ativo: document.getElementById('ativo').value === 'true'
     };
 
     // Validação simples
-    if (!medico.nome || !medico.crm || !medico.especialidade || !medico.telefone) {
+    if (!medico.nome || !medico.crm || !medico.especialidade || !medico.telefone || !medico.email) {
         document.getElementById('errorMessage').style.display = 'block';
         return;
     }
