@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/StyleIndex.css">
+    <script src="../JS/scriptIndex.js" defer></script>
     <title>Vital+ | Sistema de Gerenciamento</title>
 </head>
 <body>
     <header>
         <div class="header-content">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <h2 class="logo">Vital+</h2>
             <nav>
                 <a href="index.html" class="nav-link">Início</a>
@@ -18,16 +20,25 @@
         </div>
     </header>
 
-    <div class="container">
+    <!-- Menu Lateral -->
+    <div class="sidebar" id="sidebar">
+        <h3>Opções</h3>
+        <a href="ListaMedicos.html" class="sidebar-link">Lista de Médicos</a>
+        <a href="ListaPacientes.html" class="sidebar-link">Lista de Pacientes</a>
+        <a href="ListaConsultas.html" class="sidebar-link">Lista de Consultas</a>
+    </div>
+
+    <!-- Container Principal -->
+    <div class="container" id="main-container">
         <h1>Sistema de Gerenciamento</h1>
-        <a href="CadastroMedico.HTML" class="button">Cadastro de Médico</a>
+        <a href="CadastroMedico.html" class="button">Cadastro de Médico</a>
         <a href="CadastroPaciente.html" class="button">Cadastro de Paciente</a>
-        <a href="CadastroConsulta.HTML" class="button">Cadastro de Consulta</a>
+        <a href="CadastroConsulta.html" class="button">Cadastro de Consulta</a>
     </div>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Vital+ | Todos os direitos reservados</p>
+            <p>© 2025 Vital+ | Todos os direitos reservados</p>
             <p>Contato: contato@vitalmais.com | (11) 1234-5678</p>
         </div>
     </footer>
