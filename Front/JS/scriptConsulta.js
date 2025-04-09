@@ -31,7 +31,7 @@ function cadastrarConsulta(event) {
         }
         return response.json();
     })
-    .then(() => {
+    .then(data => {
         alert('Consulta cadastrada com sucesso!');
         document.getElementById('consultaForm').reset();
     })
