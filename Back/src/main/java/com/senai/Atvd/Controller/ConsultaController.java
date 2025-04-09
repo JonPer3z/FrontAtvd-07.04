@@ -43,6 +43,8 @@ public class ConsultaController {
         consulta.setPaciente(paciente);
         consulta.setDataHora(consultaDTO.getDataHora());
 
+        //vitão é o cara
+
 
         // Salva a consulta no banco de dados
         Consulta savedConsulta = consultaRepository.save(consulta);
