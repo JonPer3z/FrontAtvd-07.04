@@ -1,35 +1,115 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', Arial, sans-serif; /* Fonte moderna e leve */
+    background-color: #f5f7fa; /* Cinza claro e acolhedor */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column; /* Para alinhar header, container e footer */
 }
+
 .container {
     text-align: center;
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 40px 60px; /* Padding horizontal maior para largura */
+    border-left: 6px solid #4db6ac; /* Linha vertical colorida à esquerda */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra mínima */
+    max-width: 450px; /* Largura simples e funcional */
 }
+
 h1 {
-    color: #333;
+    color: #374151; /* Cinza escuro suave */
+    font-size: 32px; /* Tamanho claro e direto */
     margin-bottom: 30px;
+    font-weight: 600; /* Negrito moderado */
+    position: relative;
+    padding-left: 15px; /* Alinhamento com a borda colorida */
 }
+
 .button {
     display: block;
-    width: 200px;
+    width: 180px; /* Tamanho compacto */
     padding: 12px;
     margin: 10px auto;
-    background-color: #007bff;
-    color: white;
+    background-color: #4db6ac; /* Verde-azulado tranquilo */
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    border-radius: 0 12px 12px 0; /* Bordas arredondadas só à direita */
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
+
 .button:hover {
-    background-color: #0056b3;
+    background-color: #3d938b; /* Tom mais escuro */
+    padding-left: 18px; /* Deslocamento sutil à direita no hover */
+}
+
+/* Estilização do Header */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0; /* Linha sutil */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #4db6ac; /* Verde-azulado da identidade */
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Espaço entre links */
+}
+
+.nav-link {
+    color: #374151; /* Cinza escuro */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4db6ac; /* Destaque no hover */
+}
+
+/* Estilização do Footer */
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-top: 1px solid #e2e8f0; /* Linha sutil */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #6b7280; /* Cinza médio */
+    font-size: 12px;
+}
+
+.footer-content p {
+    margin: 5px 0;
 }

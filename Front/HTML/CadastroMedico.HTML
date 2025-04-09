@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/sytleMedico.css">
-    <script src="../JS/scriptMedico.js"></script>
-    <title>Cadastro de Médico</title>
+    <link rel="stylesheet" href="../CSS/StyleMedico.css">
+    <script src="../JS/ScriptMedico.js"></script>
+    <title>Vital+ | Cadastro de Médico</title>
 </head>
-
 <body>
+    <header>
+        <div class="header-content">
+            <h2 class="logo">Vital+</h2>
+            <nav>
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
     <div class="form-container">
         <h2>Cadastro de Médico</h2>
         <form id="medicoForm" onsubmit="cadastrarMedico(event)">
@@ -25,9 +34,6 @@
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
             <label for="ativo">Status:</label>
             <select id="ativo" name="ativo" required>
                 <option value="true">Ativo</option>
@@ -40,6 +46,12 @@
             <button type="button" class="back-button" onclick="window.location.href='index.html'">Voltar</button>
         </form>
     </div>
-</body>
 
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Vital+ | Todos os direitos reservados</p>
+            <p>Contato: contato@vitalmais.com | (11) 1234-5678</p>
+        </div>
+    </footer>
+</body>
 </html>
